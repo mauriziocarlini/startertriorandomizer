@@ -66,8 +66,8 @@ h1 {
 }
 
 .pokemon.not-chosen {
-    opacity: 0.4;
-    filter: grayscale(100%); /* Rende l'immagine in bianco e nero */
+    opacity: 0.6;
+    filter: grayscale(80%); /* Rende l'immagine in bianco e nero */
 }
 
 #refresh-button {
