@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -27,10 +27,10 @@ h1 {
 }
 
 .pokemon {
-    width: 180px;
-    height: 135px;
+    width: 100px;
+    height: 100px;
     margin: 10px;
-    border-radius: 8px;
+    border-radius: 50px;
     box-shadow:  5px 5px 10px #bebebe,
                  -5px -5px 10px #ffffff;
     display: flex;
@@ -51,6 +51,7 @@ h1 {
 }
 
 .pokemon p {
+    display: none;
     font-size: 0.9em;
     text-align: center;
     text-transform: capitalize;
@@ -61,11 +62,11 @@ h1 {
     border: none;
     box-shadow:  5px 5px 10px #bebebe,
                  -5px -5px 10px #ffffff;
-    transform: scale(1.05); /* Stessa scala dell'hover */
 }
 
 .pokemon.not-chosen {
-    opacity: 0.5;
+    opacity: 0.4;
+    filter: grayscale(100%); /* Rende l'immagine in bianco e nero */
 }
 
 #refresh-button {
@@ -88,7 +89,7 @@ h1 {
 }
 
 #linktree-container {
-    margin-top: 40px; /* Spazio sopra il linktree */
+    margin-top: 30px; /* Spazio sopra il linktree */
     text-align: center; /* Allinea il link al centro */
 }
 
