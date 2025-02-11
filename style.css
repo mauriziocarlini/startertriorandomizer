@@ -1,0 +1,103 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 24px; /* Padding di 24px su tutti i lati */
+}
+
+h1 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#pokemon-container {
+    max-width: 600px; /* Larghezza massima */
+    width: auto; /* Larghezza automatica */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto; /* Centra il contenitore */
+}
+
+.pokemon {
+    width: 180px;
+    height: 135px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow:  5px 5px 10px #bebebe,
+                 -5px -5px 10px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: transform 0.05s ease;
+}
+
+.pokemon:hover {
+    transform: scale(1.05);
+}
+
+.pokemon img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon p {
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: -12px;
+}
+
+.pokemon.chosen {
+    border: none;
+    box-shadow:  5px 5px 10px #bebebe,
+                 -5px -5px 10px #ffffff;
+    transform: scale(1.05); /* Stessa scala dell'hover */
+}
+
+.pokemon.not-chosen {
+    opacity: 0.5;
+}
+
+#refresh-button {
+    color: #333;
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    box-shadow:  5px 5px 10px #bebebe,
+                 -5px -5px 10px #ffffff;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: transform 0.05s ease;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#refresh-button:hover {
+    transform: scale(1.05);
+}
+
+#linktree-container {
+    margin-top: 40px; /* Spazio sopra il linktree */
+    text-align: center; /* Allinea il link al centro */
+}
+
+#linktree-container a {
+    font-size: 0.5em;
+    color: #333; /* Colore del link */
+    text-decoration: none; /* Rimuovi la sottolineatura */
+}
+
+#linktree-container a:hover {
+    text-decoration: underline; /* Sottolinea al passaggio del mouse */
+}
